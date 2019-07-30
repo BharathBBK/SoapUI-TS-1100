@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8d787b2a-a3c5-4cc5-876f-de9c87407585" activeEnvironment="Default" name="TSPro1" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="Reg_Suite01"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="TestCase 1"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\User\Desktop"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="a43d202c-8689-4725-a8ba-f0d8313cea69" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.2.251:5000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:endpoint>http://51.145.154.9:508</con:endpoint></con:endpoints><con:resource name="STTC_CoverageService.svc" path="/STTC_CoverageService.svc" id="befde7df-2388-46ce-b6c9-8791cb061436"><con:settings/><con:parameters/><con:resource name="0" path="GetComponenttype/{ID}" id="4cc1be49-ec8e-404d-8d44-054f321df12b"><con:settings/><con:parameters><con:parameter><con:name>ID</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter></con:parameters><con:method name="Method 1" id="3394eae2-7e74-4cae-866c-c0a0c4c0abc5" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://192.168.2.251/STTC_CoverageService.svc/GetComponenttype/0">ns:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="eb3f82f5-db27-4c8d-a833-4ee82532c0c0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetComponenttype/0</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="0" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ID</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="GetCoverageInstrumentAnalysis" path="GetCoverageInstrumentAnalysis" id="32f116a6-fc02-4991-9ae6-e9dddcdb070c"><con:settings/><con:parameters/><con:method name="Method 1" id="e3dc9918-ae97-4a87-b0c4-b7c4b206c159" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://185.212.80.35/STTC_CoverageService.svc/GetCoverageInstrumentAnalysis">get:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="3e68158a-5a65-43d5-9329-3e3367a92c0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetAccountBalance" path="GetAccountBalance" id="63b27f01-5061-4d67-b72e-cdfe3f47032f"><con:settings/><con:parameters/><con:method name="Method 1" id="fbbc2609-c063-42db-8214-64f8f9dc842d" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://51.145.154.9/STTC_CoverageService.svc/GetAccountBalance">get:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="5d6dd81b-3bbb-4c2c-82ab-c61c91f146e0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request>[15527]</con:request><con:originalUri>http://51.145.154.9/STTC_CoverageService.svc/GetAccountBalance</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="{DeleteCurrentData}" path="ProcessHTCAData/{AccountID}/{Currency}/{TimeZoneOffSet}/{USDConvParam}/{DSTStartMonth}/{DSTEndMonth}/{DSTStartWeek}/{DSTEndWeek}/{BrokerEODTime}/{DeleteCurrentData}" id="44c4ac37-f1a1-4970-af3e-147b995622fc"><con:settings/><con:parameters><con:parameter><con:name>AccountID</con:name><con:value>AccountID</con:value><con:style>TEMPLATE</con:style><con:default>AccountID</con:default></con:parameter><con:parameter><con:name>Currency</con:name><con:value>Currency</con:value><con:style>TEMPLATE</con:style><con:default>Currency</con:default></con:parameter><con:parameter><con:name>TimeZoneOffSet</con:name><con:value>TimeZoneOffSet</con:value><con:style>TEMPLATE</con:style><con:default>TimeZoneOffSet</con:default></con:parameter><con:parameter><con:name>USDConvParam</con:name><con:value>USDConvParam</con:value><con:style>TEMPLATE</con:style><con:default>USDConvParam</con:default></con:parameter><con:parameter><con:name>DSTStartMonth</con:name><con:value>DSTStartMonth</con:value><con:style>TEMPLATE</con:style><con:default>DSTStartMonth</con:default></con:parameter><con:parameter><con:name>DSTEndMonth</con:name><con:value>DSTEndMonth</con:value><con:style>TEMPLATE</con:style><con:default>DSTEndMonth</con:default></con:parameter><con:parameter><con:name>DSTStartWeek</con:name><con:value>DSTStartWeek</con:value><con:style>TEMPLATE</con:style><con:default>DSTStartWeek</con:default></con:parameter><con:parameter><con:name>DSTEndWeek</con:name><con:value>DSTEndWeek</con:value><con:style>TEMPLATE</con:style><con:default>DSTEndWeek</con:default></con:parameter><con:parameter><con:name>BrokerEODTime</con:name><con:value>BrokerEODTime</con:value><con:style>TEMPLATE</con:style><con:default>BrokerEODTime</con:default></con:parameter><con:parameter><con:name>DeleteCurrentData</con:name><con:value>DeleteCurrentData</con:value><con:style>TEMPLATE</con:style><con:default>DeleteCurrentData</con:default></con:parameter></con:parameters><con:method name="Method 1" id="db4bb489-e098-4325-a7f1-98bc367299a2" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://185.212.80.35/STTC_CoverageService.svc/ProcessHTCAData/15527/USD/1/1.0/3/11/3/2/17%3A00%3A00/0">ns:Response</con:element></con:representation><con:request name="Request 1" id="236a3448-9c76-45bc-aa0b-c65c245e6fe2" mediaType="application/json"><con:settings/><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="DeleteCurrentData" value="0"/>
+  <con:entry key="AccountID" value="15527"/>
+  <con:entry key="DSTStartWeek" value="3"/>
+  <con:entry key="Currency" value="USD"/>
+  <con:entry key="DSTEndWeek" value="2"/>
+  <con:entry key="BrokerEODTime" value="17:00:00"/>
+  <con:entry key="DSTStartMonth" value="3"/>
+  <con:entry key="DSTEndMonth" value="11"/>
+  <con:entry key="TimeZoneOffSet" value="1"/>
+  <con:entry key="USDConvParam" value="1.0"/>
+</con:parameters></con:request></con:method></con:resource><con:resource name="{AccountId}" path="GetAccounts/{AccountId}" id="1ed4d2e7-d236-4623-9ec7-46bab8f7ddc4"><con:settings/><con:parameters><con:parameter><con:name>AccountId</con:name><con:value>AccountId</con:value><con:style>TEMPLATE</con:style><con:default>AccountId</con:default></con:parameter></con:parameters><con:method name="Method 1" id="a2ae1dba-385f-42e6-b222-19bf4d2243e0" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://185.212.80.35/STTC_CoverageService.svc/GetAccounts/15565">ns:Response</con:element></con:representation><con:request name="Request 1" id="e7f264db-3bf7-4f9e-a387-ee26c072bc0f" mediaType="application/json"><con:settings/><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="AccountId" value="15527" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="AddProfitShareSettings" path="AddProfitShareSettings" id="56d76e85-8fd0-4f5c-a3c7-9d2015da1ac1"><con:settings/><con:parameters/><con:method name="Method 1" id="cb31e346-3fca-4c4b-96e0-a4060b5b9559" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://ntargusfx-win.tradesocio.com/STTC_CoverageService.svc/AddProfitShareSettings">add:Response</con:element></con:representation><con:request name="Request 1" id="bcc4bfcc-7f58-436b-b8f9-a804ccea08cb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{"MasterAccountID":1011,"PSType":1,"ShareInProfitOnly":false,"lstSecurity":
+[{"TSSecurityID":1,"ShareValue":0},
+{"TSSecurityID":2,"ShareValue":1},
+{"TSSecurityID":3,"ShareValue":0},
+{"TSSecurityID":4,"ShareValue":0},
+{"TSSecurityID":5,"ShareValue":0},
+{"TSSecurityID":6,"ShareValue":0},
+{"TSSecurityID":7,"ShareValue":0}
+]
+}
+</con:request><con:originalUri>http://ntargusfx-win.tradesocio.com/STTC_CoverageService.svc/AddProfitShareSettings</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="{ID}" path="GetComponents/{ID}" id="971fe516-0322-4234-afc7-28013742ccc7"><con:settings/><con:parameters><con:parameter><con:name>ID</con:name><con:value>ID</con:value><con:style>TEMPLATE</con:style><con:default>ID</con:default></con:parameter></con:parameters><con:method name="Method 1" id="b0d570d7-2d7c-401d-a843-42d700fdd021" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://185.212.80.35/STTC_CoverageService.svc/GetComponents/0">ns:Response</con:element></con:representation><con:request name="Request 1" id="2146e9aa-f4bc-4358-b0ed-5da1cadf195a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/GetComponents/0</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="0" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:method name="STTC_CoverageService.svc 1" id="fa53f411-4bc5-460c-b282-2fa85df00be3" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="7da1f1f9-d9d4-4647-bf14-5eba009dcae0" mediaType="application/json"><con:settings/><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="e688598f-bf0a-4564-8b29-bbb67ec0f3d5" name="PrimeryServices"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="12eed073-d8fd-4e26-ab21-98061dadaeb3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase01" searchProperties="true"><con:settings/><con:testStep type="groovy" name="PropertiesFile" id="0e21f030-b3f9-4b67-957d-b1a29a35c5f3"><con:settings/><con:config><script>
+//set property at case level
+testRunner.testCase.setPropertyValue("ProKey","192")
+
+//set property at suite level
+testRunner.testCase.testSuite.setPropertyValue("SuiteKey","SK")
+
+//set property at project level
+testRunner.testCase.testSuite.project.setPropertyValue("251","http://192.168.2.251:5000")
+
+//set global property
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("GlobalPro","P1")
+
+//set property at step level
+//testRunner.testCase.testSuite[""]
+
+log.info (testRunner.testCase.getPropertyValue("ProKey"))
+log.info (testRunner.testCase.testSuite.getPropertyValue("SuiteKey"))
+log.info (testRunner.testCase.testSuite.project.getPropertyValue("251"))
+log.info (com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("GlobalPro"))</script></con:config></con:testStep><con:testStep type="restrequest" name="GC" id="807bffb2-1556-4424-9149-c37266b9f404"><con:settings/><con:config service="http://192.168.2.251:5000" methodName="Method 1" resourcePath="/STTC_CoverageService.svc/GetComponenttype/{ID}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GC" id="69983a45-d595-465d-a739-55d61223a1de" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#Project#Endpoint}</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetComponenttype/0</con:originalUri><con:assertion type="GroovyScriptAssertion" id="4e0fc245-9387-4851-a21a-38bd9933d856" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def responsemess = messageExchange.response.responseContent
+
+def response = new JsonSlurper().parseText(responsemess)
+
+log.info(response)
+
+assert response.message == "SUCCESS"
+assert response.lstComponentType[0].Name == "GatewayClientAccount"
+
+//Fri Jun 28 17:37:12 IST 2019:INFO:{lstComponentType=[{ComponentTypeId=3, Name=GatewayClientAccount}], message=SUCCESS, result=0}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="${#TestCase#Component}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="DataDriven" id="66df88f9-ffa1-45de-839f-9a24764a9e1f"><con:settings/><con:config><script>
+
+def value = 0
+testRunner.testCase.setPropertyValue("Component","$value")
+log.info(testRunner.testCase.getPropertyValue("Component"))
+def exe = testRunner.runTestStepByName("GC")
+def res = exe.getResponse().getContentAsString()
+def response = new groovy.json.JsonSlurper().parseText(context.expand('${GC#Response}'))
+value = response.'lstComponentType'.'ComponentTypeId'
+//log.info(res)
+
+for (def i : value){
+   sleep 2000
+  testRunner.testCase.setPropertyValue("Component","$i")
+  def dd = testRunner.runTestStepByName("GC")
+  def resu = new groovy.json.JsonSlurper().parseText(context.expand('${GC#Response}'))
+  def componentID = resu.'lstComponentType'.'ComponentTypeId'
+  def componentName = resu.'lstComponentType'.'Name'
+   log.info("componentID is $componentID and componentName $componentName")
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="KeyWordDrivenFramework" id="cf002e88-e5dd-4270-8f81-c31a67d64e28"><con:settings/><con:config><script>//Data Driven Frame work
+import groovy.json.JsonSlurper
+def Endpoint = "http://192.168.2.251:5000"
+def ComponentID = [1,2,3]
+def list = []
+//Set End point
+testRunner.testCase.testSuite.project.setPropertyValue("Endpoint",Endpoint)
+log.info(testRunner.testCase.testSuite.project.getPropertyValue("Endpoint"))
+
+for (def j : ComponentID) {
+    log.info ("hear is the value $j")
+    testRunner.testCase.setPropertyValue("Component","$j")
+    testRunner.testCase.getPropertyValue("Component")
+    sleep 1000
+    def Run = testRunner.runTestStepByName("GC")
+    def response = Run.getResponse().getContentAsString()
+    def componentID = new groovy.json.JsonSlurper().parseText(context.expand('${GC#Response}'))
+    def res = componentID.'lstComponentType'.'ComponentTypeId'
+   // log.info (response)
+    log.info (res)
+    list.add(res)
+    
+    }
+log.info(list)
+
+for (def j : list) {
+log.info(j)	
+}
+ 	
+
+
+//Set Inputparameter
+//testRunner.testCase.testSuite.setPropertyValue("ComponentID",ComponentID)
+
+//def GC = testRunner.runTestStepByName("GC")
+//def GCR = GC.getResponse().getContentAsString()
+//log.info(GCR)
+
+
+
+
+
+
+
+
+//log.info (ComponentID.size())
+//
+//for (def i = 0; i &lt; ComponentID.size();i++) {
+//    // log.info(i)
+//	}
+</script></con:config></con:testStep><con:testStep type="restrequest" name="GetCoverageInstrumentAnalysis" id="43fb72f8-2931-4a23-999d-5b17923e9f44"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetCoverageInstrumentAnalysis" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCoverageInstrumentAnalysis" id="3e68158a-5a65-43d5-9329-3e3367a92c0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#EndPoint}</con:endpoint><con:request>{"ConnId":1001,"GlobalFundId":0,"RiskProfileId":0,
+"CoverageAccountId":1002,"Instrument" : "AUDCAD","Position": "A"}</con:request><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/GetCoverageInstrumentAnalysis</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="58502beb-7709-48d2-a303-f0c5d52f8039" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="f55c7fbf-9244-4699-a5c9-69c829bdc8d9" name="Contains"><con:configuration><token>SUCCESS</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="de596f02-4708-4d3b-a0ed-1b27ec4fcda2" name="Not Contains"><con:configuration><token>unsuccess</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="d81a5d36-c241-4f0d-bd46-42f61b5507a9" name="JsonPath Match"><con:configuration><path>.lstData[0].Instrument</path><content>AUDCAD</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="c6d64c60-267e-4958-8750-784df613c408" name="JsonPath Existence Match"><con:configuration><path>.lstData[0].RiskProfileID</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="aa62f820-cf22-412c-a532-c1381c878030" name="JsonPath RegEx Match"><con:configuration><path>.lstData[0].Instrument</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>AUDCAD</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="bac474ca-2320-48b8-a05a-c42a82af66e6" name="JsonPath Count"><con:configuration><path>.message</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="49d5d0fb-9afd-43dc-b2a5-bee83f4000e7" name="Response SLA"><con:configuration><SLA>1300</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="04180174-8202-4d89-a8b4-d348fc4eebe2" name="ScriptAss01"><con:configuration><scriptText>
+import groovy.json.JsonSlurper
+
+def responsemessage = messageExchange.response.responseContent
+
+def response = new JsonSlurper().parseText(responsemessage)
+
+log.info(response)
+log.info(response.lstData[0].ConnectionID)
+ //assert.messageExchange.timeTaken &lt; 1300
+
+ //log.info (response.lstData.AvgBuyPrice)
+
+assert response.lstData.toString() != null
+assert response.lstData[0].ConnectionID.toString() == "1001"
+assert response.lstData[0].CoverageAccount == "1002"
+ </scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="KeyWordDrivenForPostMethod" id="17ab7c1f-bf66-4026-9604-57886caaaf07"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def Endpoint = "http://51.141.99.219:5002"
+
+def jsonReq = '{"ConnId":1001,"GlobalFundId":0,"RiskProfileId":0,"CoverageAccountId":1002,"Instrument" : "AUDCAD","Position": "A"}'
+
+def Restrequest = testRunner.testCase.getTestStepByName("GetCoverageInstrumentAnalysis")
+def testStep = Restrequest.getTestRequest()
+log.info(testStep)
+
+testStep.setRequestContent(jsonReq)
+testRunner.testCase.testSuite.project.setPropertyValue("Endpoint",Endpoint);
+
+def rest = testRunner.runTestStepByName("GetCoverageInstrumentAnalysis")
+def res = rest.getResponse().getContentAsString()
+log.info(res)
+
+def jsonSlurperobj = new JsonSlurper().parseText(res)
+assert !(jsonSlurperobj.isEmpty())
+jsonSlurperobj.each {
+	log.info(it)	
+}
+	
+	
+
+	
+	
+</script></con:config></con:testStep><con:testStep type="groovy" name="PostGroovy" id="367a756b-f8ec-445d-8d0c-6ca0bcc0eda3"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def Endpoint = ""
+
+def jsonReq = '''{"ConnId":1001,"GlobalFundId":0,"RiskProfileId":0,
+"CoverageAccountId":1002,"Instrument" : "AUDCAD","Position": "A"}'''
+def GCIReq = testRunner.testCase.getTestStepByName("GetCoverageInstrumentAnalysis")
+def Req = GCIReq.getTestRequest()
+
+Req.setRequestContent(jsonReq)
+
+def res = testRunner.runTestStepByName("GetCoverageInstrumentAnalysis")
+def re = res.getResponse().getContentAsString()
+log.info(re)
+
+def jsonSlurperobj = new JsonSlurper().parseText(re)
+assert !(jsonSlurperobj.isEmpty())
+
+jsonSlurperobj.each {
+log.info(jsonSlurperobj.lstData)
+log.info(jsonSlurperobj.lstData.ConnectionID)	
+}
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyCode..01" id="20aa7b2a-6ecd-46c5-b447-dd7618758186"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+//Prime Number logic*******************
+//def i = 9;
+//  flag = 0
+//  for (def j = 2;j&lt;=i-1;j++){
+//  	if (i%j ==0){
+//  	   log.info(i +" "+ "is not a prime number")	
+//  	   flag = 1
+//  	   break;
+//  		}
+//  	}
+//  	if (flag == 0) {
+//  		log.info (i + " is a prime number")
+//  		}
+
+//Swap logic using 3 variables *****************
+  def a = "Bharath"
+  def b = "Kumar"
+  def c = ""
+   //log.info(a+" " + b )
+   c = a
+   a = b
+   b = c
+   //log.info (a + " " + b)
+
+
+//Swap logic with out using extra variable*******************
+//   def x = "Bharath"
+//   def y = "Kumar"
+//   x = x + y
+//  y = x.substring(0,(x.size()-y.size()))
+//  log.info (y)
+//  x = x.substring(y.size())
+// log.info (x + "" + y)
+
+ 
+ //palindrum code**************************
+//    def int num = 23
+//    def sum = 0
+//
+//     outp = num
+//    while (num>0) {
+//    def re = (num%10) //3
+//    sum = (sum*10) + re
+//     log.info(sum)
+//     num = num/10
+//   }
+
+//    def ck = [123,121,231,141,313]
+//    for  (num in ck) {
+//     String nm = (String)num
+//       def re = nm.reverse()
+//       log.info (nm + " " + re)
+//       if (nm == re) {
+//       log.info ("given numeber is a palindrem" + num) 	
+//       	}
+//       	else {
+//       log.info ("given numeber is a not palindrem" + num) 			
+//       		}
+//    }
+
+    
+
+    
+
+//finding duplicate elements in array********************
+    
+//   def  arr = new int[3]
+//   def int[] arr1 = [0,1,2,3,4,4]
+//
+//   for (i = 0; i&lt;arr1.size();i++){
+//   	
+//   //	log.info (arr1[i])
+//   	for (j = i+1; j&lt;arr1.size();j++ ){
+//   		
+//   		if (arr1[i] == arr1[j]) {
+//   	    log.info ("duplicate"+i)
+//   			}
+//   		}
+//   	}
+
+//How to reverse string ************************
+
+  def na = "Bharath"
+////
+////   // log.info(na.size())
+////   // log.info (na.substring(6,7))
+// char[] con = na.toCharArray()
+//for (er = con.size()-1;er>=0;er--){
+//log.info(con[er])	
+//}
+//
+//def  ge = con.toString()
+//log.info(ge)
+//def he = ge.toCharArray()
+//log.info(he.size())
+
+ 
+//How to reverse string*************************
+   for (sl = 0; sl&lt;=na.size()-1;sl ++ ){
+   	
+   	    def p1 = na.substring(sl,(sl+1))
+         log.info(p1)
+      for (se = sl + 1; se&lt;=na.size()-1;se ++ ){
+         def p2 = na.substring(se,(se+1))
+     //log.info(na.substring(se,(se+1))+" "+ na.substring(sl,(sl+1)))
+//   if (p1 == p2){
+//   	log.info(p1)
+//   	}
+     
+     }
+}
+   	
+   
+
+
+
+ 
+
+
+ 
+
+   
+
+   
+
+ 
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Run_Test_Suite" id="d9e055b6-58fa-4143-a5d3-cddd772a7a49"><con:settings/><con:config><script>log.info ("Bharath")</script></con:config></con:testStep><con:properties><con:property><con:name>ProKey</con:name><con:value>192</con:value></con:property><con:property><con:name>Component</con:name><con:value>3</con:value></con:property></con:properties></con:testCase><con:testCase id="aabb3f50-b7fc-42bd-b38c-eaf4942c615f" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="restrequest" name="GC" id="6f5ee2cf-b96f-4e71-9483-b5fcad28694e"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetComponenttype/{ID}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GC" id="eb3f82f5-db27-4c8d-a833-4ee82532c0c0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetComponenttype/0</con:originalUri><con:assertion type="Simple Contains" id="91caa472-26d1-451a-8f62-2001c3c53bf3" name="Contains"><con:configuration><token>gg</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ID</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="5fe49ac9-6f64-4c39-a129-93be6074b49b"><con:settings/><con:config><script>def tCase = testRunner.testCase.testSuite.testCases["TestCase1"]
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="741835f2-c341-4153-81b7-7f937a026dcc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 3" searchProperties="true"><con:settings/><con:testStep type="groovy" name="RunTestCase" id="e6545ccd-9207-4872-a1d0-1a2cfba26f81"><con:settings/><con:config><script>//def tcase = testRunner.testCase.testSuite.testCases["TestCase 2"]
+//def prop = new com.eviware.soapui.support.types.StringToObjectMap()
+//
+//runner = tcase.run(null,false)
+//log.info(runner.getStatus().toString())
+
+//get List of test cases
+
+def tclist = context.testCase.testSuite.getTestCaseList()
+
+log.info(tclist.name)
+
+for (ge in tclist){
+	log.info(ge.name)
+	}
+
+
+//tclist.each {
+//log.info(it.name)	
+//
+//if (it.name == "TestCase 2"){
+//
+//log.info ("this is "+it.name)	
+//def tcase = testRunner.testCase.testSuite.testCases[it.name]
+//def prop = new com.eviware.soapui.support.types.StringToObjectMap()
+//runner = tcase.run(prop,true)
+//sleep(5000)
+//log.info(runner.getStatus().toString())
+//	
+//	}
+//	
+//}
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="runTestSuite" id="e9d4e953-28c9-4270-b39f-08b28416220a"><con:settings/><con:config><script>def ts = context.testCase.testSuite.project.testSuites["Reg_Suite01"]
+
+runner = ts.run(null,false)
+
+log.info(ts.name)
+log.info(runner.getStatus())</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>SuiteKey</con:name><con:value>SK</con:value></con:property></con:properties></con:testSuite><con:testSuite id="7dfc9ef7-66f4-4f1d-8556-16ba3965cf29" name="Reg_Suite01"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7a02b585-3106-4f1d-a866-e3d407806c62" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GC1" id="53621609-3211-4c39-9998-5413fbf2150f"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetComponenttype/{ID}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GC1" id="eb3f82f5-db27-4c8d-a833-4ee82532c0c0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetComponenttype/0</con:originalUri><con:assertion type="JsonPath Count" id="1fb744ce-43c1-4ce7-8aba-1370417b3b09" name="JsonPath Count"><con:configuration><path/><content/><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="b1e72fb0-230a-4c52-97f2-b2e34153f49d" name="JsonPath Existence Match"><con:configuration><path>$..lstComponentType[?(@.ComponentTypeId == 1)]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="a36d0719-dc95-4cb5-b3d9-9a8b14d36366" name="JsonPath RegEx Match"><con:configuration><path>lstComponentType</path><content/><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx/></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="0" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ID</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="LinkedList" id="4f6e2b61-f1a4-4c02-ba32-ac9c8fb8a73a"><con:settings/><con:config><script>
+LinkedList&lt;Integer,Integer> ll = new LinkedList&lt;Integer,Integer>()
+//def a = [1,2,3,4,5]
+//def b = [6,7,8,9,10]
+ll.addAll(0,1)
+//log.info(ll)
+//ll.add(6)
+log.info(ll.get(0))</script></con:config></con:testStep><con:testStep type="groovy" name="ArrayList" id="dfab24ba-3da8-4c6f-a0aa-df4399b264f2"><con:settings/><con:config><script>
+//def run = testRunner.runTestStepByName("GC1")
+
+//log.info (run.getResponse().getContentAsString())
+
+ArrayList&lt;String> ar = new ArrayList&lt;String>();
+ar.add("B")
+ar.add("H")
+ar.add("A")
+ar.add("R")
+ar.add("A")
+ar.add("T")
+ar.add(6,"H")
+//log.info("After setting the value>"+ar.get(0))
+//log.info("Array List>>>"+ar)
+def name = ["k","U","M","A","R"]
+//log.info(name.size())
+ar.addAll(4,name)
+log.info("Array List>>>"+ar)
+ar.add(0,"*B")
+log.info("Array List>>>"+ar)
+
+
+</script></con:config></con:testStep><con:testStep type="httprequest" name="GetComponent" id="57e3afc7-12da-4fc1-af1d-41fc440eff5f"><con:settings/><con:config method="GET" xsi:type="con:HttpRequest" id="3d93dfeb-cb3b-4b12-9944-0115ba4d91a3" name="GetComponent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000/STTC_CoverageService.svc/GetComponenttype/0</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><con:parameter><con:name>ID</con:name><con:value>0</con:value><con:style>TEMPLATE</con:style><con:default>0</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e29f2e8f-957a-494d-a9fe-ebb3e01aea48" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="API_Reg_001" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetComponenttype" id="5df3747d-364f-4c27-8428-11bee3186c25"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetComponenttype/{ID}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetComponenttype" id="eb3f82f5-db27-4c8d-a833-4ee82532c0c0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetComponenttype/0</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="09aba448-a47f-4279-85a8-e4565c663e8e" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d5becc37-9d93-43f8-8f60-5acb896b73f7" name="Response SLA"><con:configuration><SLA>800</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" id="e03dfc5e-d9f6-4b7e-a1ce-96c90ca69eff" name="Contains"><con:configuration><token>lstComponentType</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="d4112767-1da4-409b-95e5-7e63a47bf7aa" name="Not Contains"><con:configuration><token>unsuccessful</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="cb949465-157c-48c1-ab62-fd0e638bb5ce" name="ScriptAssertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+//
+def responsemess = messageExchange.response.responseContent
+def response = new JsonSlurper().parseText(responsemess)
+log.info(response.lstComponentType[0].ComponentTypeId)
+
+assert response.message == "SUCCESS"
+assert response.lstComponentType[0].Name == "TradeCopier"
+
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+log.info(actualHTTPResponse)
+
+def msgexchange = messageExchange.getResponseStatusCode()
+assert msgexchange == 200</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="0" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ID</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Re_Call" id="93c34451-cedf-4fb3-a44d-1c715a4763c5"><con:settings/><con:config><script>import groovy.json.JsonSlurper 
+def getComponents = testRunner.runTestStepByName('GetComponenttype')
+def getvalues = getComponents.getResponse().getContentAsString()
+log.info(getvalues)
+
+def rec = new JsonSlurper().parseText(getvalues)
+log.info(rec.lstComponentType[0])</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="f539b178-3887-4852-bae3-ddb6518916ff" name="ExecuteHTCA"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d9170052-6bca-436c-8ffa-1228489b6dee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HTCAReq" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="HTCA_TC" id="19e45c61-241a-4dcb-acc8-95429bb3e4a3"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/ProcessHTCAData/{AccountID}/{Currency}/{TimeZoneOffSet}/{USDConvParam}/{DSTStartMonth}/{DSTEndMonth}/{DSTStartWeek}/{DSTEndWeek}/{BrokerEODTime}/{DeleteCurrentData}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="HTCA_TC" id="236a3448-9c76-45bc-aa0b-c65c245e6fe2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request/><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/ProcessHTCAData/15527/USD/1/1.0/3/11/3/2/17%3A00%3A00/0</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="DeleteCurrentData" value="0"/>
+  <con:entry key="AccountID" value="${#TestSuite#TCID}"/>
+  <con:entry key="DSTStartWeek" value="3"/>
+  <con:entry key="Currency" value="USD"/>
+  <con:entry key="DSTEndWeek" value="2"/>
+  <con:entry key="BrokerEODTime" value="17:00:00"/>
+  <con:entry key="DSTStartMonth" value="3"/>
+  <con:entry key="DSTEndMonth" value="11"/>
+  <con:entry key="TimeZoneOffSet" value="1"/>
+  <con:entry key="USDConvParam" value="1.0"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Run_HTCA" id="9b085109-e682-4623-85ff-c5084a758c25"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+//def int[] acc = [14810]
+//for (i in acc){
+//def gs = i.toString()
+//testRunner.testCase.testSuite.setPropertyValue("TCID",gs)
+//sleep(5000)	
+//def HTCA = testRunner.runTestStepByName("HTCA_TC")
+//def res = HTCA.getResponse().getContentAsString();
+////def obj = new JsonSlurper.parseText(res)
+//log.info(res)
+////log.info(gs)
+//}
+
+
+def int[] account = [14810]
+
+
+//testRunner.testCase.testSuite.setPropertyValue("PKID",)
+
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="GA" id="776dd7ed-3066-4573-9d18-82c8695a21cb"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetAccounts/{AccountId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GA" id="e7f264db-3bf7-4f9e-a387-ee26c072bc0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request/><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/GetAccounts/15565</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="AccountId" value="${#TestSuite#PKID}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Star_Script" id="399d4a5b-faab-45ec-bb03-e71a1c0ef49c"><con:settings/><con:config><script>String a = 1
+
+log.info(a)</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>PKID</con:name><con:value>14584</con:value></con:property><con:property><con:name>TCID</con:name><con:value>14866</con:value></con:property><con:property><con:name>currency</con:name><con:value>[USD]</con:value></con:property></con:properties></con:testSuite><con:testSuite id="3e56892b-25f0-4330-b358-ca847dd415dc" name="QA_TestSuite_001"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f34b1071-7890-40b0-8b22-8927648993ef" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="QA_TC_001" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetM" id="0f64bb26-97bf-40af-aac7-a6bce44ad4fc"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetAccounts/{AccountId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetM" id="e7f264db-3bf7-4f9e-a387-ee26c072bc0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetAccounts/15527</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="AccountId" value="14878" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="184c1ebf-06c0-4a77-8daa-55253b75a807" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="QA_TC_002" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAccounts" id="becd2cca-baea-4370-aaa2-a9c833a93d10"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetAccounts/{AccountId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAccounts" id="e7f264db-3bf7-4f9e-a387-ee26c072bc0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetAccounts/14878</con:originalUri><con:assertion type="Simple Contains" id="a9cd5f54-4ac2-4cd3-ae77-ff159a57195b" name="Contains"><con:configuration><token>success</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="AccountId" value="14878" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="33325d35-6ae0-49ae-9355-f42c536abba7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="QA_TC_003" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAcc" id="3248d749-8c0d-4b94-9ded-da02f66600be"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetAccounts/{AccountId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAcc" id="e7f264db-3bf7-4f9e-a387-ee26c072bc0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetAccounts/14878</con:originalUri><con:assertion type="Simple Contains" id="98932394-16c6-4d5f-b88c-64e6e87f5410" name="Contains"><con:configuration><token>success</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="AccountId" value="14878" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="805c6fa3-b8fe-4a72-8010-7a7bf8d8e763" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="QA_TC_004" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAcoun" id="3caa269e-5ca6-43e1-9461-6fd7ff5973aa"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetAccounts/{AccountId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAcoun" id="e7f264db-3bf7-4f9e-a387-ee26c072bc0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetAccounts/14878</con:originalUri><con:assertion type="Simple Contains" id="845eef51-4957-47c6-a4e4-d82c63a44acc" name="Contains"><con:configuration><token>xyz</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="AccountId" value="14878" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="bc2fd67c-0959-4bde-a229-5f3e585cedc4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Exe_TC" searchProperties="true"><con:settings/><con:testStep type="groovy" name="runTestCase" id="81cff2af-7603-4cb2-a615-1a68a591ed6e"><con:settings/><con:config><script>
+def tc = testRunner.testCase.testSuite.getTestCaseList()
+
+log.info(tc.size())
+
+for (def i = 0;i&lt;=tc.size()-2;i++){
+	
+	//log.info(tc[i].name)
+
+def tCase = testRunner.testCase.testSuite.testCases[tc[i].name]
+def prop = new com.eviware.soapui.support.types.StringToObjectMap()
+runner = tCase.run(prop,true)
+	sleep(500)
+def status = runner.getStatus().toString()
+if (status != "FAILED"){
+	log.info(status + ">>>>>"+tc[i].name)
+	}
+	else {
+	i = 0
+	}
+}
+
+
+	</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Project</con:name><con:value>PK</con:value></con:property><con:property><con:name>251</con:name><con:value>http://192.168.2.251:5000</con:value></con:property><con:property><con:name>Endpoint</con:name><con:value>http://51.141.99.219:5002</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
