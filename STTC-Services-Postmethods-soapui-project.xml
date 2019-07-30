@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a3cc9fcb-2984-448d-9341-fa7a97fdfaf2" activeEnvironment="Default" name="STTC_Services_Postmethods" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c134319e-6f51-4be2-af75-dc33388bd55c" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.2.251:5000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${#Project#ENDSC}</con:endpoint><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:endpoint>http://185.62.85.23:5000</con:endpoint><con:endpoint>http://192.168.2.253:5000</con:endpoint><con:endpoint>http://51.141.53.220:5001</con:endpoint><con:endpoint>http://51.141.99.219:5002</con:endpoint></con:endpoints><con:resource name="STTC_CoverageService.svc" path="/STTC_CoverageService.svc/" id="3a58c602-f635-4e06-8763-fb981889551a"><con:settings/><con:parameters/><con:resource name="UpdateAccountGroupSettings" path="UpdateAccountGroupSettings" id="85a72aca-ae90-4b8c-99ff-f5b10423e7d4"><con:settings/><con:parameters/><con:method name="Method 1" id="e51935f6-8e05-4126-918f-884646e2c8fa" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.84/STTC_CoverageService.svc/UpdateAccountGroupSettings">upd:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="UpdateAccountGroupSettings" id="45d2ff92-7cf6-467e-a61e-1d87310dde3c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>                                                                              
+{
+"GroupId":1517,"Active":1,
+"lstSecurity":[{"TSSecurityID":20,"MarkUp":23,"Active":1}]
+}
+
+
+
+
+
+</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/UpdateAccountGroupSettings</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddServerSymbolMap" path="AddServerSymbolMap" id="1caecb16-af9f-40e3-9668-3061c817d9c1"><con:settings/><con:parameters/><con:method name="Method 1" id="c52d252b-4507-4f8e-9868-62ffcc88e7ce" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="AddServerSymbolMap" id="55e4226c-2f7b-41a2-9535-0d2026a54863" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.84:5007</con:endpoint><con:request>[{
+"SymbolId":79,
+"ConnId":3044,
+"LocalName":"USDJPY#"
+	
+			
+}]</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/AddServerSymbolMap</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateServerSymbolMap" path="UpdateServerSymbolMap" id="1acd262b-f1b9-47f2-ab3d-48c09ccd5535"><con:settings/><con:parameters/><con:method name="Method 1" id="1de8664b-055c-4d78-a506-bdf48e31a223" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="UpdateServerSymbolMap" id="c4c3b61b-42dc-4c06-bc57-100db2c158cb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.84:5007</con:endpoint><con:request>[{
+"SymbolId":77,
+"ConnId":2045,
+"LocalName":"EURUSD#"
+	
+			
+}]</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/UpdateServerSymbolMap</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddRiskProfile" path="AddRiskProfile" id="a452d8aa-6bdc-42ef-a0bd-c01cce949a08"><con:settings/><con:parameters/><con:method name="Method 1" id="7406cfc8-0e14-47c5-a05e-0c496ea72e6a" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.84/STTC_CoverageService.svc/AddRiskProfile">add:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="AddRiskProfile" id="2f6b173a-8eea-458b-84bf-570a68f2d4e1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+ "ABookPerc": 0,
+      "Active": true,
+      "LastUpdatedtime": 0,
+      "Name": "B_Book_25_07",
+      "RiskProfileID": 0,
+      "SlaveConnID": 10043
+ }</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/AddRiskProfile</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddCommissionProfile" path="AddCommissionProfile" id="c5e493ea-498f-45b0-8ada-68b88ce19ab2"><con:settings/><con:parameters/><con:method name="Method 1" id="5fcc7d2a-c4e2-431f-9c9b-0d4e3040de8a" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.84/STTC_CoverageService.svc/AddCommissionProfile">add:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="AddCommissionProfile" id="f4225a44-2ed3-40b7-9ee7-797831b7a07a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+
+	 "Active": 1,
+      "CommissionType": 1,
+      "LastUpdatedtime": 0,
+      "ProfileID": 0,
+      "ProfileName": "CommissionProfiles_2019_07_18",
+      "ShareInProfitOnly": 0,
+      "SlaveConnID": 10043
+}</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/AddCommissionProfile</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddRebateProfile" path="AddRebateProfile" id="76549b10-1279-41e3-9657-e82540f649cc"><con:settings/><con:parameters/><con:method name="Method 1" id="6ed0a0fc-4566-4689-9920-536c8f1be80e" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.84/STTC_CoverageService.svc/AddRebateProfile">add:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="AddRebateProfile" id="8e8cf974-8892-4493-82c6-6fb586152754" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.88:5000</con:endpoint><con:request>{
+
+	 "ProfileID": 0,
+      "RebateName": "REBATE10032",
+      "RebateType": 1,
+      "SlaveConnID": 10032
+      
+}</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/AddRebateProfile</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdatePHPserviceURL" path="UpdatePHPserviceURL" id="72af2661-45ce-4850-9284-a10b09200975"><con:settings/><con:parameters/><con:method name="Method 1" id="5439583e-228d-4010-b628-0b28fb45e9ef" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.84/STTC_CoverageService.svc/UpdatePHPserviceURL">upd:Response</con:element></con:representation><con:request name="Request 1" id="d1c03dda-86f3-4d5e-974d-5d10396eadbe" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://46.235.34.52:5000</con:endpoint><con:request>"http://stage3.tradesocio.com/trade/tcwebservices/stop_copy_service.php"
+</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/UpdatePHPserviceURL</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateAccountGroupSettings" path="UpdateAccountGroupSettings" id="56f3ac9c-ce21-4c7f-b7d6-8ddda7028a5d"><con:settings/><con:parameters/><con:method name="Method 1" id="815730a5-b24a-4c61-b9b5-bef154fe2865" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.84/STTC_CoverageService.svc/UpdateAccountGroupSettings">upd:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="61e8a53b-2344-435d-9382-c9573b840381" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+	"GroupId":5026,
+	"Active":1,
+	"lstSecurity":[{"TSSecurityID":2006,"MarkUp":75,"Active":1},
+	{"TSSecurityID":2006,"MarkUp":75,"Active":1}]
+}</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/UpdateAccountGroupSettings</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddMetaTraderConnection" path="AddMetaTraderConnection" id="d6c52579-254f-410e-ba8a-d223bd919b04"><con:settings/><con:parameters/><con:method name="Method 1" id="f2520237-37aa-4914-b403-b830de1bb1f3" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.84/STTC_CoverageService.svc/AddMetaTraderConnection">add:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d4d18a41-002c-4c6b-a089-9e8c95c2a0a6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://51.145.154.9:508</con:endpoint><con:request>{
+"Login":"75",
+"Password" : "wn%95DhQ%ABZ",
+"IP" : "live1.argusfx.com",
+"Port" : 1950,
+"ServerName" :"ArgusFX_FIX_RO",
+"Active" : 1,
+"ServerAPIIP":"live1.argusfx.com",
+"ServerAPIPort" : 4444,
+"BrokerID" : 1,
+"Gateway":1,
+"MaxLot" : 1000,
+"isAccountDisabledForTCSL":1,
+"BrokerCalculationTime":"23:59",
+"IsStopCopyTriggerDisabled":1,
+"isReadOnly":1,
+"DateOfSnapShot":15,
+"TimeOfSnapShot":"23:59",
+"MgmtFeeDateOfSnapShot": 15,
+"MgmtFeeTimeOfSnapShot" : "05:30"
+}</con:request><con:originalUri>http://192.168.2.84/STTC_CoverageService.svc/AddMetaTraderConnection</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="TradeUpdateAsClosed" path="TradeUpdateAsClosed" id="4fd6b2ba-5b72-46d0-bac9-04fb638a5ba6"><con:settings/><con:parameters/><con:method name="Method 1" id="298331ca-98bd-4bb3-8625-1047b14be1c0" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="09fadd8f-4a3f-47f7-9df1-4ed8789c2a5a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.75.21.45:7771</con:endpoint><con:request>{
+"orderid":"4562755", 
+"closePrice":"1.17383",
+"ProfitValue":"0",
+"TransactTime" :"1528876746",
+"Reason" : "0",
+"CloseQty" :"14",
+"AccNo" : "133"
+		
+}</con:request><con:originalUri>http://216.75.21.45/STTC_CoverageService.svc/TradeUpdateAsClosed</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetCoverageOpenExposureLPtrade" path="GetCoverageOpenExposureLPtrade" id="b1841635-9424-4d8c-aea6-c4679335d842"><con:settings/><con:parameters/><con:method name="Method 1" id="5ccbf25e-3aa7-4ff0-9333-e37797677cd3" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://185.62.85.23/STTC_CoverageService.svc/GetCoverageOpenExposureLPtrade">get:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="1a1b450d-f0e5-4be1-9bea-e272dc9727a7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#ENDSC}</con:endpoint><con:request>{
+"ConnId":101,
+"GlobalFundId":0,
+"RiskProfileId":0,
+"CoverageAccountId":0,
+"Position":0,
+"Instrument":0
+}</con:request><con:originalUri>http://185.62.85.23/STTC_CoverageService.svc/GetCoverageOpenExposureLPtrade</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetCoverageClosedExposureLPtrade" path="GetCoverageClosedExposureLPtrade" id="3d6c75bc-80c0-44fb-bc9a-f5b70fc91737"><con:settings/><con:parameters/><con:method name="Method 1" id="9aac20ed-a702-4def-8656-73ad220e00be" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://46.235.34.52/STTC_CoverageService.svc/GetCoverageClosedExposureLPtrade">get:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="24bed50c-16ed-405e-b5d4-698bf2b4730d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://51.141.53.220:5001</con:endpoint><con:request>{
+"ConnId":1001,
+"GlobalFundId":0,
+"RiskProfileId":0,
+"CoverageAccountId":1000,
+"Position":0,
+"Instrument":0
+}</con:request><con:originalUri>http://46.235.34.52/STTC_CoverageService.svc/GetCoverageClosedExposureLPtrade</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetCoverageInstrumentAnalysis" path="GetCoverageInstrumentAnalysis" id="e90bce4f-d625-4b06-9d54-0a7f39594071"><con:settings/><con:parameters/><con:method name="Method 1" id="318f4356-ffd3-48c0-8c8a-0b62ee6da621" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://185.212.80.35/STTC_CoverageService.svc/GetCoverageInstrumentAnalysis">get:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=us-ascii</con:mediaType><con:status>400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="be6bb1e9-1b48-457a-93bd-0acf034dd230" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://51.141.53.220:5001</con:endpoint><con:request>
+{
+"ConnId":1001,
+"GlobalFundId":0,
+"RiskProfileId":0,
+"CoverageAccountId":1002,
+"Instrument" : "AUDCAD",
+"Position": "A"
+}</con:request><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/GetCoverageInstrumentAnalysis</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateConnectionSetting" path="UpdateConnectionSetting" id="c98baa0f-bdf6-4011-a3c0-4da900b1b3a0"><con:settings/><con:parameters/><con:method name="Method 1" id="d636596b-5dba-4272-9b18-c32ed1352112" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.251/STTC_CoverageService.svc/UpdateConnectionSetting">upd:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="9b94e6a1-9527-4d9b-94e9-e12f51a4dba0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+	"ConnectionID":10018,
+	"BrokerCalculationTime":"23:59",
+	"DateOfSnapShot":17,
+	"TimeOfSnapShot":"05:20",
+	"MgmtFeeDateOfSnapShot":15,
+	"MgmtFeeTimeOfSnapShot":"17:30"
+}
+</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/UpdateConnectionSetting</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateBrokerCalculationTime" path="UpdateBrokerCalculationTime" id="a72075cd-5ff3-4769-85b3-e8c3bdfcef56"><con:settings/><con:parameters/><con:method name="Method 1" id="5dce224e-d853-4816-9805-f6797471a9e3" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.251/STTC_CoverageService.svc/UpdateBrokerCalculationTime">upd:Response</con:element></con:representation><con:request name="Request 1" id="6870c643-9e88-4af1-90be-31343a692316" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+"ConnectionID" : 10034,
+"BrokerCalculationTime" : "23:40"
+	
+}</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/UpdateBrokerCalculationTime</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateConnectionCredential" path="UpdateConnectionCredential" id="face0745-b7a0-419e-8cba-49279ee9e9ad"><con:settings/><con:parameters/><con:method name="Method 1" id="91c55b8f-f39f-4bf4-ac75-4459177ea98b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.251/STTC_CoverageService.svc/UpdateConnectionCredential">upd:Response</con:element></con:representation><con:request name="Request 1" id="865c7d45-1357-4a02-a8c7-bf716d54ce45" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+"ConnectionID":10018,
+"Login":"334",
+"Password":"admin123"
+}</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/UpdateConnectionCredential</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateConnectionSetting" path="UpdateConnectionSetting" id="265bf7c0-fb90-4c07-9116-4a9017b06fe0"><con:settings/><con:parameters/><con:method name="Method 1" id="619c2d48-00c0-42fa-b136-a9f4e61cf9d1" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.251/STTC_CoverageService.svc/UpdateConnectionSetting">upd:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="a6fece66-6728-4b1c-a22e-8ccf79a3d4a6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+	"ConnectionID":10034,
+	"BrokerCalculationTime":"06:31",
+	"DateOfSnapShot":17,
+	"TimeOfSnapShot":"04:30",
+	"MgmtFeeDateOfSnapShot":15,
+	"MgmtFeeTimeOfSnapShot":"04:30"
+}
+</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/UpdateConnectionSetting</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="UpdateGatewayCredential" path="UpdateGatewayCredential" id="5857253e-a31f-434f-b797-6b13c80ea126"><con:settings/><con:parameters/><con:method name="Method 1" id="0d90eb7c-2054-4935-855b-25d64c5a1fc3" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://192.168.2.251/STTC_CoverageService.svc/UpdateGatewayCredential">upd:Response</con:element></con:representation><con:request name="Request 1" id="160bd5d4-b511-4232-9d81-aa9927a9597e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>{
+"GatewayId" : 1,
+"Login" : "admin",
+"Password" : "admin123"
+}</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/UpdateGatewayCredential</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetSumofCurrentAllocatedBalance" path="GetSumofCurrentAllocatedBalance" id="f3633fd5-06a4-44d3-8591-1d8f6cf422f2"><con:settings/><con:parameters/><con:method name="Method 1" id="60a18062-28b3-4374-a19b-2c97f4858453" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://185.212.80.35/STTC_CoverageService.svc/GetSumofCurrentAllocatedBalance">get:Response</con:element></con:representation><con:request name="Request 1" id="42dde1e7-6901-4228-8d81-0fb81dff5934" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#ENDSC}</con:endpoint><con:request>[1006]</con:request><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/GetSumofCurrentAllocatedBalance</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetAccountBalance" path="GetAccountBalance" id="4d0867b4-f09a-4767-8e40-58266ba96762"><con:settings/><con:parameters/><con:method name="Method 1" id="22cb1e01-776c-48e7-9d82-ecd9dd5f3f8b" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://185.212.80.35/STTC_CoverageService.svc/GetAccountBalance">get:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="1dc9b7c7-02b2-4ba6-a390-ba4378c141b5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://185.212.80.35:5000</con:endpoint><con:request>[11177]</con:request><con:originalUri>http://185.212.80.35/STTC_CoverageService.svc/GetAccountBalance</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddMasterFeeMapping" path="AddMasterFeeMapping" id="95119a4a-190c-41b5-b407-71003a3d9274"><con:settings/><con:parameters/><con:method name="Method 1" id="297fbfa9-3767-4782-a028-bc45e560a980" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.251/STTC_CoverageService.svc/AddMasterFeeMapping">add:Response</con:element></con:representation><con:request name="Request 1" id="99ee170e-15ec-4f4f-a9e3-44b2679b783e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>[  
+   {  
+      "MasterAccountID":15999,
+      "FeeTypeID":1,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   },
+   {  
+      "MasterAccountID":15999,
+      "FeeTypeID":2,
+      "Percentage":0,
+      "FixedFeeAmount":10
+   },
+   {  
+      "MasterAccountID":15999,
+      "FeeTypeID":3,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   },   
+   {  
+      "MasterAccountID":15999,
+      "FeeTypeID":4,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   },
+   
+   {  
+      "MasterAccountID":15999,
+      "FeeTypeID":5,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   }
+]
+</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/AddMasterFeeMapping</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddMasterBrokerFeeMapping" path="AddMasterBrokerFeeMapping" id="c1feba77-2fdf-4d3b-aeff-1031877925fe"><con:settings/><con:parameters/><con:method name="Method 1" id="abba8a17-7c16-4f1f-8082-fc27cd66d193" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.251/STTC_CoverageService.svc/AddMasterBrokerFeeMapping">add:Response</con:element></con:representation><con:request name="Request 1" id="e70097eb-0da8-4fdb-b1ad-9b51f9c95952" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>[  
+   {  
+      "MasterAccountID":15999,
+      "ConnID":10043,
+      "FeeTypeID":1,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   },
+   {  
+      "MasterAccountID":15999,
+      "ConnID":10043,
+      "FeeTypeID":2,
+      "Percentage":0,
+      "FixedFeeAmount":10
+   },
+   {  
+      "MasterAccountID":15999,
+      "ConnID":10043,
+      "FeeTypeID":3,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   },
+   {  
+      "MasterAccountID":15999,
+      "ConnID":10043,
+      "FeeTypeID":4,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   },
+   {  
+      "MasterAccountID":15999,
+      "ConnID":10043,
+      "FeeTypeID":5,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   }
+   
+]</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/AddMasterBrokerFeeMapping</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="STTC_CoverageService.svc 1" id="ae11a6e1-74aa-480b-91fe-ca8926f0edd5" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="aba70a02-1c9d-407b-8088-d4457d6cdadb" mediaType="application/json"><con:settings/><con:endpoint>http://192.168.2.84:5007</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="GetAccountBalance" id="34fe7442-ab3d-46bb-b93c-99d800b579f5" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sttc="http://51.141.99.219/STTC_CoverageService.svc">sttc:Response</con:element></con:representation><con:request name="Request 1" id="68809f47-9396-477a-bcba-3ed1f21f91aa" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://51.141.99.219:5002</con:endpoint><con:request>[1034]</con:request><con:originalUri>http://51.141.99.219/STTC_CoverageService.svc</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties><con:property><con:name>ENDSC</con:name><con:value>http://138.91.34.239:5004</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
