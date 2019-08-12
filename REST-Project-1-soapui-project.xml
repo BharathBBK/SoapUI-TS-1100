@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="33ce0ecd-4990-4866-a306-46bcda95055a" activeEnvironment="Default" name="REST Project 1" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="f1474895-e770-427b-ac68-2450f9552a1a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.2.251:5000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://192.168.2.251:5000</con:endpoint></con:endpoints><con:resource name="STTC_CoverageService.svc" path="/STTC_CoverageService.svc" id="ce600898-734f-4a5d-8881-2e33968e0f72"><con:settings/><con:parameters/><con:resource name="{id}" path="GetComponenttype/{id}" id="6814de67-cffe-4992-81ad-874e3eebbf23"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="92eabd5b-4992-48fe-aeb3-a4b0405e8e02" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://192.168.2.251/STTC_CoverageService.svc/GetComponents/0">ns:Response</con:element></con:representation><con:request name="Request 1" id="f0de7650-e029-4cec-9a5b-5e20537acadc" mediaType="application/json"><con:settings/><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="AddMasterFeeMapping" path="AddMasterFeeMapping" id="03de55f1-185c-413e-bae4-b57839ef90a9"><con:settings/><con:parameters/><con:method name="Method 1" id="1704e835-b5d4-4166-9cbb-b50609388e95" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://192.168.2.251/STTC_CoverageService.svc/AddMasterFeeMapping">add:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="463ca733-8820-4627-9a20-e330444c543a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>[  
+   {  
+      "MasterAccountID":9602,
+      "FeeTypeID":1,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":2,
+      "Percentage":0,
+      "FixedFeeAmount":10
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":3,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":4,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":5,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   }
+]
+</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/AddMasterFeeMapping</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="STTC_CoverageService.svc 1" id="bd24690f-ad45-4e16-877c-a7ae41fd0f60" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="7cbb5592-fda5-4d1d-90ae-78c59a57f236" mediaType="application/json"><con:settings/><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="41aeab10-9783-41bc-9db7-ef07ada1b0cc" name="TS-0011"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a8757e1d-2773-4a31-8408-026132ed6f72" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC-0012" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetComponent" id="dddd9dc0-8fc0-40b3-8d63-d508247773d6"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/GetComponenttype/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetComponent" id="f0de7650-e029-4cec-9a5b-5e20537acadc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request/><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/GetComponents/0</con:originalUri><con:assertion type="Simple Contains" id="6613f770-bd21-4e88-9245-db68e57f0e81" name="Contains"><con:configuration><token>success</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="06c97d57-de52-4fd7-adc4-50a9d881e4cd" name="JsonPath Count"><con:configuration><path>message</path><content/><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="0" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="AddMasterFeeMapping" id="af99cd0c-35f3-45bd-97ac-861089c1d754"><con:settings/><con:config service="http://192.168.2.251:5000" resourcePath="/STTC_CoverageService.svc/AddMasterFeeMapping" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddMasterFeeMapping" id="463ca733-8820-4627-9a20-e330444c543a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.2.251:5000</con:endpoint><con:request>[  
+   {  
+      "MasterAccountID":9602,
+      "FeeTypeID":1,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":2,
+      "Percentage":0,
+      "FixedFeeAmount":10
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":3,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":4,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   } ,  {  
+      "MasterAccountID":9602,
+      "FeeTypeID":5,
+      "Percentage":10,
+      "FixedFeeAmount":0
+   }
+]
+</con:request><con:originalUri>http://192.168.2.251/STTC_CoverageService.svc/AddMasterFeeMapping</con:originalUri><con:assertion type="Simple Contains" id="1d1c899a-1af1-475a-a53b-5f73aa9b895f" name="Contains"><con:configuration><token>success</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
